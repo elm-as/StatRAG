@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "statrag"
+version = "0.1.0"
+description = "Pipeline RAG PostgreSQL/pgvector évalué par métriques statistiques objectives et intervalles de confiance"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{ name = "Elmas (ElmasCore)" }]
+
+[project.optional-dependencies]
+postgres = ["psycopg[binary]>=3.1"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
